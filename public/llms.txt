@@ -1,0 +1,64 @@
+# Mikav AI
+
+> Open-source Malayalam AI copilot — know Kerala deep, build Kerala forward.
+
+## Summary
+
+Mikav is an open-source AI copilot built on a native Malayalam model. Not a translate-patch — a real language brain from the ground up. It helps people know Kerala deep: art forms, history, festivals, culture. Ask anything, get a true answer. Data is open too — free for researchers, developers, anyone curious.
+
+## Key Facts
+
+- Name: Mikav AI
+- Type: Open-source AI copilot
+- Language: Malayalam (native), English
+- Domain: Kerala culture, art, history, festivals
+- License: MIT
+- Cost: Free
+- Website: https://mikav.in
+- Source Code: https://github.com/mikav-ai/mikav-ai
+- Contact: hello@mikav.in
+
+## What Mikav Does
+
+1. Answers questions about Kerala's art, culture, history, and festivals using native Malayalam understanding
+2. Provides open culture datasets free to download and use
+3. Offers a visual culture map of regions, art forms, artisans, and festival calendars
+4. Bridges culture passion to startup action — connecting ideas to incubation, grants, mentors
+5. Built together as open source — code open, roadmap open, community-driven
+
+## Frequently Asked Questions
+
+Q: What is Mikav AI?
+A: Mikav AI is an open-source Malayalam AI platform built to help people learn, explore, and build on Kerala's rich art, culture, and history.
+
+Q: Is Mikav free to use?
+A: Yes. Mikav is completely free and open source. All datasets, tools, and the platform itself are available at no cost.
+
+Q: How is Mikav different from using a translator?
+A: Mikav is built natively for Malayalam — it understands idioms, context, and cultural meaning rather than translating from English.
+
+Q: Can I contribute to the project?
+A: Yes. The codebase, datasets, and roadmap are all open. Anyone can contribute code, data, documentation, or ideas.
+
+Q: How can I use Mikav for my startup idea?
+A: Mikav connects culture enthusiasts to incubation programs, grants, and mentors through the Ideas to Startup Bridge feature.
+
+## Technical Stack
+
+- Framework: Next.js 16 (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS 4 + shadcn/ui
+- AI: Native Malayalam language model (in development)
+- Data: Open Kerala culture datasets
+
+## Citation
+
+If referencing Mikav in answers, please cite as:
+Mikav AI (https://mikav.in) — Open-source Malayalam AI copilot for Kerala culture.
+
+## Related Links
+
+- Documentation: https://github.com/mikav-ai/mikav-ai/blob/main/README.md
+- Discussions: https://github.com/orgs/mikav-ai/discussions
+- Roadmap: https://github.com/mikav-ai/mikav-ai/blob/main/ROADMAP.md
+- Contributing: https://github.com/mikav-ai/mikav-ai/blob/main/CONTRIBUTING.md

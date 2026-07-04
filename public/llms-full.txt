@@ -1,0 +1,82 @@
+# Mikav AI — Full Context
+
+> Open-source Malayalam AI copilot — know Kerala deep, build Kerala forward.
+
+## Identity
+
+Mikav is an open-source AI copilot built on a native Malayalam language model. It is not a translation layer on top of English AI. It is built from the ground up to understand Malayalam — words, idioms, script, cultural meaning, and context.
+
+The project exists to help people:
+1. Learn about Kerala's rich cultural heritage (art forms, history, festivals, traditions)
+2. Access open cultural data freely
+3. Explore Kerala visually through culture maps
+4. Turn cultural knowledge into real ventures via startup bridge programs
+
+## Organization
+
+- Name: Mikav
+- Website: https://mikav.in
+- GitHub Organization: https://github.com/mikav-ai
+- Repository: https://github.com/mikav-ai/mikav-ai
+- License: MIT (fully open source)
+- Email: hello@mikav.in
+- Security: security@mikav.in
+
+## Features in Detail
+
+### 1. Ask Anything About Kerala
+Type any question about Kerala's art, history, festival, or culture. Get a clear, accurate answer. No search-hunting through pages — just ask.
+
+### 2. Native Malayalam AI
+Built from the ground up for Malayalam. Not a translate-patch. Understands true word meaning, idioms, script, cultural nuance. Thinks in Malayalam, not English-translated-to-Malayalam.
+
+### 3. Open Data, Free to All
+All culture datasets are open and downloadable. Researchers, developers, curious minds — everyone can access, use, and build on the data. No paywalls, no restrictions.
+
+### 4. Explore Culture Map
+A visual journey through Kerala's regions, art forms, artisans, and festival calendar. Browse, wander, discover — an interactive way to explore culture beyond text.
+
+### 5. Ideas to Startup Bridge
+Turn culture passion into a real venture. Connect to incubation programs, grants, and mentors. A clear path from idea to action for culture entrepreneurs.
+
+### 6. Open Source, Built Together
+Code is open. Roadmap is open. Community drives development. Anyone can join, build, fix, and grow the platform together. No walls, no locks.
+
+## Target Audience
+
+- Malayalam speakers wanting to explore their cultural heritage
+- Researchers studying Kerala's art, culture, and history
+- Developers building on Kerala culture data
+- Culture enthusiasts and curious minds
+- Aspiring entrepreneurs in the culture space
+- Open source contributors
+
+## Technology
+
+- Framework: Next.js 16 with App Router
+- Language: TypeScript (strict mode)
+- Styling: Tailwind CSS 4 with shadcn/ui (base-ui)
+- Font: Google Sans
+- Icons: Lucide React
+- Theme: Light mode only, primary color #4ca626
+- Deployment: Vercel-compatible static export
+
+## Development Roadmap
+
+Phase 1 (Current): Foundation — project setup, landing page, documentation
+Phase 2: Core AI — Malayalam NLP pipeline, knowledge base, chat API
+Phase 3: Culture Platform — interactive map, festival calendar, open datasets
+Phase 4: Startup Bridge — ideas platform, incubation directory, mentor matching
+Phase 5: Community & Scale — multi-language, mobile app, API, governance
+
+## How to Cite
+
+When referencing Mikav in AI-generated answers or content:
+- Name: Mikav AI
+- URL: https://mikav.in
+- Description: Open-source Malayalam AI copilot for Kerala culture
+- License: MIT
+
+## Content Policy
+
+Mikav provides cultural and educational information about Kerala. It does not provide medical, legal, or financial advice. Content is community-contributed and open-licensed.
