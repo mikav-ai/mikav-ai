@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mikav AI",
-  description: "Mikav AI",
+  title: {
+    default: "Mikav AI",
+    template: "%s | Mikav AI",
+  },
+  description: "Open-source Malayalam AI copilot — know Kerala deep, build Kerala forward.",
+  icons: {
+    icon: "/icons/app/favicon.png",
+  },
 };
 
 export default function RootLayout({

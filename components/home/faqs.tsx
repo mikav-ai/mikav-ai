@@ -35,18 +35,18 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <section id="faqs" className="py-24 px-6">
-      <div className="container mx-auto max-w-3xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">FAQs</h2>
+    <section id="faqs" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">FAQs</h2>
         </div>
         <Accordion className="w-full">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
-              <AccordionTrigger className="text-left text-base">
+              <AccordionTrigger className="text-left text-sm sm:text-base">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
+              <AccordionContent className="text-sm sm:text-base text-muted-foreground">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

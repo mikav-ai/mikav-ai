@@ -1,19 +1,12 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function AppHeader() {
   return (
     <header id="app-header" className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-6">
+      <div className="max-w-6xl mx-auto flex h-14 sm:h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2">
-          <span className="text-xl font-bold text-primary">Mikav</span>
-        </div>
-        <nav className="hidden md:flex items-center gap-6">
-          <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Features</a>
-          <a href="#faqs" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">FAQs</a>
-        </nav>
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm">Sign In</Button>
-          <Button size="sm">Get Started</Button>
+          <Image src="/icons/app/icon-dark.png" alt="Mikav" width={28} height={28} />
+          <span className="text-lg sm:text-xl font-bold text-primary">Mikav</span>
         </div>
       </div>
     </header>

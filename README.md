@@ -8,10 +8,10 @@
 
 <p align="center">
   <a href="https://mikav.in">Website</a> •
-  <a href="#features">Features</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="CONTRIBUTING.md">Contributing</a> •
-  <a href="ROADMAP.md">Roadmap</a>
+  <a href="https://github.com/mikav-ai/mikav-ai">GitHub</a> •
+  <a href="https://github.com/orgs/mikav-ai/discussions">Discussions</a> •
+  <a href="ROADMAP.md">Roadmap</a> •
+  <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
 ---
@@ -24,12 +24,12 @@ The data is open too — free for researchers, developers, anyone curious. Beyon
 
 ## Features
 
-- **Native Malayalam AI** — Built from ground for Malayalam, not a translation layer
-- **Ask Anything About Kerala** — Art, history, festivals, culture — clear answers
-- **Open Data** — Culture datasets free to download and use anywhere
-- **Culture Map** — Visual exploration of regions, art forms, artisans, festivals
-- **Ideas to Startup Bridge** — Connect passion to incubation, grants, mentors
-- **Open Source** — Code open, roadmap open, community-driven
+- **Native Malayalam AI** — Built from ground for Malayalam, not a translation layer. Understands true word, idiom, script, meaning deep.
+- **Ask Anything About Kerala** — Art, history, festivals, culture — type any question, get a clear answer. No search-hunt, just ask.
+- **Open Data, Free to All** — Culture datasets open, download free, use anywhere. Researcher, dev, curious mind — all welcome.
+- **Explore Culture Map** — Visual journey through regions, art forms, artisans, festival calendar. Browse, wander, discover.
+- **Ideas to Startup Bridge** — Turn culture passion into real venture. Connect to incubation programs, grants, mentors — path from idea to action.
+- **Open Source, Built Together** — Code open, roadmap open, community-driven. Anyone can join, build, fix, grow this together — no wall, no lock.
 
 ## Getting Started
 
@@ -50,41 +50,72 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Environment Variables
+
+Copy `.env.example` to `.env.local` and fill in values as needed. See the file for all available variables.
+
 ## Tech Stack
 
-- **Framework:** Next.js 16
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4 + shadcn/ui
-- **Font:** Google Sans
-- **Icons:** Lucide React
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind CSS 4 + shadcn/ui (base-ui) |
+| Font | Google Sans |
+| Icons | Lucide React |
+| Theme | Light only, primary #4ca626 |
 
 ## Project Structure
 
 ```
 mikav-ai/
-├── app/              # Next.js app router pages
+├── app/                # Next.js app router pages & layouts
+│   ├── layout.tsx      # Root layout (font, theme)
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Tailwind config & theme variables
 ├── components/
-│   ├── app/          # Layout components (header, footer)
-│   ├── home/         # Landing page sections
-│   └── ui/           # shadcn/ui components
-├── lib/              # Utilities
-└── public/           # Static assets
+│   ├── app/            # Layout shell (header, footer, layout)
+│   ├── home/           # Landing page sections (hero, features, faqs, cta)
+│   └── ui/             # shadcn/ui primitives (button, card, accordion)
+├── lib/                # Shared utilities
+├── public/             # Static assets
+├── .env.example        # Environment variable template
+├── AGENTS.md           # AI agent context
+├── CHANGELOG.md        # Version history
+├── CODE_OF_CONDUCT.md  # Community standards
+├── CONTRIBUTING.md     # How to contribute
+├── LICENSE             # MIT License
+├── ROADMAP.md          # Development roadmap
+└── SECURITY.md         # Security policy
+```
+
+## Scripts
+
+```bash
+npm run dev      # Start development server (Turbopack)
+npm run build    # Production build
+npm run start    # Serve production build
+npm run lint     # ESLint
 ```
 
 ## Contributing
 
-We welcome contributions from everyone. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions from everyone — developers, designers, writers, researchers, culture enthusiasts. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Join the conversation in [Discussions](https://github.com/orgs/mikav-ai/discussions).
 
 ## Roadmap
 
-See [ROADMAP.md](ROADMAP.md) for what's planned.
+See [ROADMAP.md](ROADMAP.md) for the full development plan across 5 phases: Foundation → Core AI → Culture Platform → Startup Bridge → Community & Scale.
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+MIT — see [LICENSE](LICENSE) for details.
 
-## Links
+## Community
 
 - **Website:** [mikav.in](https://mikav.in)
 - **GitHub:** [github.com/mikav-ai/mikav-ai](https://github.com/mikav-ai/mikav-ai)
+- **Discussions:** [github.com/orgs/mikav-ai/discussions](https://github.com/orgs/mikav-ai/discussions)
 - **Email:** hello@mikav.in
+- **Security:** security@mikav.in
