@@ -70,15 +70,22 @@ Copy `.env.example` to `.env.local` and fill in values as needed. See the file f
 ```
 mikav-ai/
 ├── app/                # Next.js app router pages & layouts
-│   ├── layout.tsx      # Root layout (font, theme)
+│   ├── layout.tsx      # Root layout (font, theme, SEO metadata)
 │   ├── page.tsx        # Home page
-│   └── globals.css     # Tailwind config & theme variables
+│   ├── globals.css     # Tailwind config & theme variables
+│   ├── sitemap.ts      # Dynamic sitemap generation
+│   └── robots.ts       # Dynamic robots.txt generation
 ├── components/
 │   ├── app/            # Layout shell (header, footer, layout)
 │   ├── home/           # Landing page sections (hero, features, faqs, cta)
+│   ├── shared/         # Shared components (JSON-LD structured data)
 │   └── ui/             # shadcn/ui primitives (button, card, accordion)
 ├── lib/                # Shared utilities
-├── public/             # Static assets
+├── public/
+│   ├── icons/app/      # App icons (favicon, light/dark logos)
+│   ├── llms.txt        # LLM context (Answer Engine Optimization)
+│   ├── llms-full.txt   # Extended LLM context
+│   └── skill.md        # Agent instructions
 ├── .env.example        # Environment variable template
 ├── AGENTS.md           # AI agent context
 ├── CHANGELOG.md        # Version history

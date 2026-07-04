@@ -6,6 +6,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.3.0] - 2026-07-05
+
+### Added
+
+- SEO metadata: Open Graph, Twitter Card, keywords, authors, robots directives
+- Dynamic `sitemap.ts` generating `/sitemap.xml`
+- Dynamic `robots.ts` generating `/robots.txt` with sitemap reference
+- JSON-LD structured data: Organization, WebSite, SoftwareApplication, FAQPage schemas
+- Answer Engine Optimization (AEO):
+  - `public/llms.txt` — structured context for LLMs
+  - `public/llms-full.txt` — extended deep context for AI answer engines
+  - `public/skill.md` — agent behavior instructions
+- `components/shared/` folder with barrel export for shared components
+- `metadataBase` set to `https://mikav.in`
+
+### Changed
+
+- Moved `json-ld.tsx` from `components/app/` to `components/shared/`
+- Updated README project structure to reflect new files
+
+---
+
 ## [0.2.0] - 2026-07-05
 
 ### Added
