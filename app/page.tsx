@@ -1,6 +1,6 @@
 import { AppLayout } from "@/components/app";
 import { JsonLd } from "@/components/shared";
-import { Hero, Features, Faqs, Cta } from "@/components/home";
+import { Hero, Features, Faqs, Cta } from "@/components/pages/home";
 
 export default function Home() {
   return (
