@@ -38,7 +38,9 @@ export function Faqs() {
     <section id="faqs" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">FAQs</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <a href="#faqs" className="hover:text-primary/80 transition-colors">#</a> FAQs
+          </h2>
         </div>
         <Accordion className="w-full">
           {faqs.map((faq, i) => (

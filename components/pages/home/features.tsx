@@ -45,7 +45,9 @@ export function Features() {
     <section id="features" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-muted/40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Features</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <a href="#features" className="hover:text-primary/80 transition-colors">#</a> Features
+          </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature) => (

@@ -2,7 +2,9 @@ export function About() {
   return (
     <section id="about" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">About</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <a href="#about" className="hover:text-primary/80 transition-colors">#</a> About
+          </h2>
       </div>
     </section>
   );
