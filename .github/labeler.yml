@@ -1,0 +1,35 @@
+app:
+  - changed-files:
+      - any-glob-to-any-file: "app/**"
+
+components:
+  - changed-files:
+      - any-glob-to-any-file: "components/**"
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.md"
+          - "content/**"
+
+blog:
+  - changed-files:
+      - any-glob-to-any-file: "content/blog/**"
+
+config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.json"
+          - "*.mjs"
+          - "*.ts"
+          - "!app/**"
+          - "!components/**"
+          - "!lib/**"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: ".github/**"
+
+styles:
+  - changed-files:
+      - any-glob-to-any-file: "**/*.css"
