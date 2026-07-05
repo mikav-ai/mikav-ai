@@ -6,6 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.4.0] - 2026-07-05
+
+### Added
+
+- Research pages with 5 draft papers (dataset corpus, model finetuning, benchmark, human-in-loop trust, system paper)
+- Research list with search and grid layout (`/research`)
+- Research slug pages with react-markdown rendering (`/research/[slug]`)
+- Blog system with markdown content from `content/blog/`
+- SparkX KSUM blog post — program selection announcement
+- Company page with About (overview box), Team, Brand (font + colors), Contact (form)
+- Contact form using shadcn input/textarea/label
+- Forms library: waitlist, feedback, support, request demo, contact, newsletter
+- Cookie consent banner with accept/decline and 10s auto-accept
+- Responsive mobile nav with hamburger menu
+- SEO: Open Graph, Twitter Card, canonical URLs on blog and research pages
+- AEO: JSON-LD Article schema on blog posts, ScholarlyArticle on papers
+- Dynamic sitemap with all blog posts, research papers, and static pages
+- Programs section on home page (SparkX KSUM)
+- Hidden scrollbar across all browsers
+
+### Changed
+
+- Primary color updated to #c8242b (red)
+- Secondary color updated to #fdf2e3 (warm cream)
+- Moved `components/home` to `components/pages/home`
+- Header nav: added Research, Blogs, Company links (left-aligned next to logo)
+- Logo in header and footer now links to home
+- Features and CTA sections enhanced with subtitles and shadows
+- About section in card box with overview paragraph
+- Removed all visible `#` anchor text from section headings
+
+---
+
 ## [0.3.0] - 2026-07-05
 
 ### Added

@@ -69,31 +69,37 @@ Copy `.env.example` to `.env.local` and fill in values as needed. See the file f
 
 ```
 mikav-ai/
-├── app/                # Next.js app router pages & layouts
-│   ├── layout.tsx      # Root layout (font, theme, SEO metadata)
-│   ├── page.tsx        # Home page
-│   ├── globals.css     # Tailwind config & theme variables
-│   ├── sitemap.ts      # Dynamic sitemap generation
-│   └── robots.ts       # Dynamic robots.txt generation
+├── app/                  # Next.js app router pages & layouts
+│   ├── layout.tsx        # Root layout (font, theme, SEO metadata)
+│   ├── page.tsx          # Home page
+│   ├── globals.css       # Tailwind config & theme variables
+│   ├── sitemap.ts        # Dynamic sitemap generation
+│   ├── robots.ts         # Dynamic robots.txt generation
+│   ├── not-found.tsx     # Custom 404 page
+│   ├── company/          # Company page
+│   ├── research/         # Research listing + [slug] pages
+│   ├── resources/blog/   # Blog listing + [slug] pages
+│   └── legal/            # Privacy, terms, cookies
 ├── components/
-│   ├── app/            # Layout shell (header, footer, layout)
-│   ├── home/           # Landing page sections (hero, features, faqs, cta)
-│   ├── shared/         # Shared components (JSON-LD structured data)
-│   └── ui/             # shadcn/ui primitives (button, card, accordion)
-├── lib/                # Shared utilities
+│   ├── app/              # Layout shell (header, footer, layout)
+│   ├── forms/            # Reusable forms (waitlist, contact, etc.)
+│   ├── pages/            # Page-specific components
+│   │   ├── home/         # Hero, features, programs, faqs, cta
+│   │   ├── blog/         # Blog list, card, search, grid
+│   │   ├── company/      # About, team, brand, contact
+│   │   └── research/     # Research list, card, search, grid
+│   ├── shared/           # Shared (JSON-LD, markdown, cookie banner)
+│   └── ui/               # shadcn/ui primitives
+├── content/
+│   ├── blog/             # Blog posts (markdown)
+│   └── paper/            # Research papers (markdown)
+├── lib/                  # Utilities (blog, paper readers)
 ├── public/
-│   ├── icons/app/      # App icons (favicon, light/dark logos)
-│   ├── llms.txt        # LLM context (Answer Engine Optimization)
-│   ├── llms-full.txt   # Extended LLM context
-│   └── skill.md        # Agent instructions
-├── .env.example        # Environment variable template
-├── AGENTS.md           # AI agent context
-├── CHANGELOG.md        # Version history
-├── CODE_OF_CONDUCT.md  # Community standards
-├── CONTRIBUTING.md     # How to contribute
-├── LICENSE             # MIT License
-├── ROADMAP.md          # Development roadmap
-└── SECURITY.md         # Security policy
+│   ├── icons/app/        # App icons (favicon, light/dark logos)
+│   ├── llms.txt          # LLM context (AEO)
+│   ├── llms-full.txt     # Extended LLM context
+│   └── skill.md          # Agent instructions
+└── .github/workflows/    # CI, CodeQL, labeler, stale, greetings
 ```
 
 ## Scripts
