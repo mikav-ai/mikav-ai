@@ -1,5 +1,6 @@
 import { AppHeader } from "./app-header";
 import { AppFooter } from "./app-footer";
+import { CookieBanner } from "@/components/shared";
 
 export function AppLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <AppFooter />
+      <CookieBanner />
     </>
   );
 }

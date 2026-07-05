@@ -43,12 +43,25 @@ export default function CookiesPage() {
         </tbody>
       </table>
 
-      <h2>3. Third-Party Cookies</h2>
+      <h2>3. Local Caching</h2>
+      <p>
+        We use browser local storage to cache your preferences and improve page load performance. This includes:
+      </p>
+      <ul>
+        <li><strong>Cookie consent:</strong> Remembers your acceptance so the banner doesn&apos;t reappear</li>
+        <li><strong>Search preferences:</strong> Caches recent search queries for faster access</li>
+        <li><strong>UI state:</strong> Remembers expanded/collapsed sections and navigation choices</li>
+      </ul>
+      <p>
+        Local storage data stays on your device and is never sent to our servers.
+      </p>
+
+      <h2>4. Third-Party Cookies</h2>
       <p>
         We may use third-party services (such as analytics providers) that set their own cookies. We do not control these cookies.
       </p>
 
-      <h2>4. Managing Cookies</h2>
+      <h2>5. Managing Cookies</h2>
       <p>
         You can manage or disable cookies through your browser settings. Note that disabling cookies may affect site functionality.
       </p>
@@ -58,12 +71,12 @@ export default function CookiesPage() {
         <li><strong>Safari:</strong> Preferences → Privacy → Cookies</li>
       </ul>
 
-      <h2>5. Changes</h2>
+      <h2>6. Changes</h2>
       <p>
         We may update this cookie policy as our use of cookies evolves. Check this page for the latest version.
       </p>
 
-      <h2>6. Contact</h2>
+      <h2>7. Contact</h2>
       <p>
         For questions about our cookie usage, contact us at <a href="mailto:hello@mikav.in">hello@mikav.in</a>.
       </p>
