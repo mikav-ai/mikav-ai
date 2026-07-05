@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 import { AppLayout } from "@/components/app";
 import { Markdown } from "@/components/shared";
-import { getPostBySlug, getAllPosts } from "@/lib/blog";
+import { getPaperBySlug, getAllPapers } from "@/lib/paper";
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+  const papers = getAllPapers();
+  return papers.map((paper) => ({ slug: paper.slug }));
 }
 
 export async function generateMetadata({
@@ -14,23 +14,23 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
-  if (!post) return {};
+  const paper = getPaperBySlug(slug);
+  if (!paper) return {};
   return {
-    title: post.meta.title,
-    description: post.meta.description,
+    title: paper.meta.title,
+    description: paper.meta.description,
   };
 }
 
-export default async function BlogPostPage({
+export default async function PaperPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const paper = getPaperBySlug(slug);
 
-  if (!post) notFound();
+  if (!paper) notFound();
 
   return (
     <AppLayout>
@@ -38,7 +38,7 @@ export default async function BlogPostPage({
         <div className="max-w-3xl mx-auto">
           <div className="mb-8">
             <div className="flex flex-wrap gap-2 mb-4">
-              {post.meta.tags.map((tag) => (
+              {paper.meta.tags.map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium"
@@ -46,15 +46,21 @@ export default async function BlogPostPage({
                   {tag}
                 </span>
               ))}
+              {paper.meta.status === "draft" && (
+                <span className="rounded-full bg-muted text-muted-foreground px-2 py-0.5 text-xs font-medium">
+                  Draft
+                </span>
+              )}
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-3">
-              {post.meta.title}
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 leading-tight">
+              {paper.meta.title}
             </h1>
+            <p className="text-muted-foreground mb-3">{paper.meta.description}</p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>{post.meta.author}</span>
+              <span>{paper.meta.authors.join(", ")}</span>
               <span>·</span>
-              <time dateTime={post.meta.date}>
-                {new Date(post.meta.date).toLocaleDateString("en-IN", {
+              <time dateTime={paper.meta.date}>
+                {new Date(paper.meta.date).toLocaleDateString("en-IN", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
@@ -62,7 +68,7 @@ export default async function BlogPostPage({
               </time>
             </div>
           </div>
-          <Markdown content={post.content} />
+          <Markdown content={paper.content} />
         </div>
       </article>
     </AppLayout>
