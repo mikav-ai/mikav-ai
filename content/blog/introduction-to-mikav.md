@@ -3,7 +3,7 @@ title: "Introduction to Mikav"
 slug: "introduction-to-mikav"
 description: "Meet Mikav — an open-source Malayalam AI copilot built to help you know Kerala deep and build Kerala forward."
 date: "2026-07-05"
-author: "Mikav Team"
+author: "Hrudu Shibu"
 tags: ["announcement", "open-source", "malayalam-ai"]
 ---
 

@@ -3,7 +3,7 @@ title: "Fine-Tuning Open LLMs for Native Malayalam Cultural Understanding: A Com
 slug: "model-finetuning"
 description: "Compares fine-tuning approaches (Llama, Qwen, Gemma) on the Malayalam culture corpus, evaluating language fluency and cultural-knowledge accuracy against base/baseline models."
 date: "2026-07-05"
-authors: ["Mikav Research"]
+authors: ["Hrudu Shibu"]
 tags: ["fine-tuning", "llm", "malayalam", "llama", "qwen", "gemma"]
 status: "draft"
 ---

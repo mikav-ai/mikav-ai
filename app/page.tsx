@@ -1,6 +1,6 @@
 import { AppLayout } from "@/components/app";
 import { JsonLd } from "@/components/shared";
-import { Hero, Features, Faqs, Cta } from "@/components/pages/home";
+import { Hero, Features, Programs, Faqs, Cta } from "@/components/pages/home";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <JsonLd />
       <Hero />
       <Features />
+      <Programs />
       <Faqs />
       <Cta />
     </AppLayout>

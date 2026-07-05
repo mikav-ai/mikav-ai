@@ -3,7 +3,7 @@ title: "Mikav: An Open-Source AI Copilot Bridging Cultural Heritage and Creative
 slug: "mikav-system-paper"
 description: "Presents the full Mikav system architecture (dataset → model → copilot → dev platform), deployment approach, and a case study from the SparkX cohort showing real-world usage and outcomes."
 date: "2026-07-05"
-authors: ["Mikav Research"]
+authors: ["Hrudu Shibu"]
 tags: ["system-paper", "architecture", "open-source", "entrepreneurship", "sparkx"]
 status: "draft"
 ---

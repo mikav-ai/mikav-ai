@@ -3,7 +3,7 @@ title: "MalayalamCultureBench: A Benchmark for Evaluating LLM Understanding of K
 slug: "benchmark"
 description: "Introduces a new evaluation benchmark covering Kerala-specific culture (art forms, festivals, oral traditions, history), testing existing LLMs against the Mikav fine-tuned model to quantify cultural-awareness gaps."
 date: "2026-07-05"
-authors: ["Mikav Research"]
+authors: ["Hrudu Shibu"]
 tags: ["benchmark", "evaluation", "malayalam", "culture", "llm"]
 status: "draft"
 ---

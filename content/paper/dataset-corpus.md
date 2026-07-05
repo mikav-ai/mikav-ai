@@ -3,7 +3,7 @@ title: "Building an Open Malayalam Culture Corpus: Collection, Cleaning, and Lic
 slug: "dataset-corpus"
 description: "Documents the methodology for sourcing, cleaning, and licensing Malayalam text and cultural heritage data (manuscripts, oral history, festival/art records) into an open, reusable dataset — addressing IP ownership and low-resource data challenges."
 date: "2026-07-05"
-authors: ["Mikav Research"]
+authors: ["Hrudu Shibu"]
 tags: ["dataset", "corpus", "malayalam", "cultural-heritage", "open-data"]
 status: "draft"
 ---

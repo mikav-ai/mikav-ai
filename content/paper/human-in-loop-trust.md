@@ -3,7 +3,7 @@ title: "Community-Verified AI: A Human-in-the-Loop Framework for Preserving Regi
 slug: "human-in-loop-trust"
 description: "Proposes a verification methodology pairing domain experts (cultural institutions, practitioners) with AI-generated content to reduce hallucination risk and ensure trustworthy representation of niche cultural knowledge."
 date: "2026-07-05"
-authors: ["Mikav Research"]
+authors: ["Hrudu Shibu"]
 tags: ["human-in-the-loop", "verification", "trust", "cultural-knowledge", "hallucination"]
 status: "draft"
 ---
