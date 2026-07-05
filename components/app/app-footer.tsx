@@ -12,8 +12,9 @@ export function AppFooter() {
           &copy; {new Date().getFullYear()} Mikav. All rights reserved.
         </p>
         <nav className="flex items-center gap-4">
-          <a href="#" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
-          <a href="#" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a>
+          <a href="/legal/privacy" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</a>
+          <a href="/legal/terms" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</a>
+          <a href="/legal/cookies" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">Cookies</a>
         </nav>
       </div>
     </footer>
